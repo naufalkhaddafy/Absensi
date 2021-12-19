@@ -41,7 +41,6 @@ class AdminModel extends Model
         return DB::table('tbl_rekapan')->delete();
     }
 
-
     protected $table = "tbl_rekapan";
     protected $fillable = ['created_at', 'nama', 'keterangan', 'ket_pekerjaan', 'lokasi'];
 }

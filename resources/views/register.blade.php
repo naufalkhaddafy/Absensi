@@ -101,8 +101,6 @@
     <script src="{{ asset('template') }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- iCheck -->
     <script src="{{ asset('template') }}/plugins/iCheck/icheck.min.js"></script>
-    <sc{{ asset('template') }} $(function() { $('input').iCheck({ checkboxClass: 'icheckbox_square-blue' ,
-        radioClass: 'iradio_square-blue' , increaseArea: '20%' /* optional */ }); }); </script>
 </body>
 
 </html>

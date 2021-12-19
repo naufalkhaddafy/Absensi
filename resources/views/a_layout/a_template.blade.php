@@ -183,7 +183,6 @@
         $(document).ready(function() {
             $('.sidebar-menu').tree()
         });
-
     </script>
     <script>
         $(document).ready(function() {
@@ -192,7 +191,6 @@
 
             });
         });
-
     </script>
 
     <script type="text/javascript">
@@ -207,7 +205,6 @@
                 return true;
             });
         });
-
     </script>
 
 </body>
