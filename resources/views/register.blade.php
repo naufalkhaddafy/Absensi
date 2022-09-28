@@ -42,9 +42,9 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="form-group has-feedback">
-                    <input id="name" type="text" name="name" class="form-control @error('name') is-invalid @enderror"
-                        name="name" value="{{ old('name') }}" required autocomplete="name" autofocus
-                        placeholder="Masukan Nama">
+                    <input id="name" type="text" name="name"
+                        class="form-control @error('name') is-invalid @enderror" name="name"
+                        value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Masukan Nama">
                     @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
