@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\KaryawanController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\KaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,6 @@ Route::post('/profile/update/{id}', [UserController::class, 'update']);
 // Route::get('/tambah', [AdminController::class, 'tambah']);
 //Route::get('/karyawan', [KaryawanController::class, 'index']);
 //Route::get('/karyawan/detail/{id_karyawan}', [KaryawanController::class, 'detail']);
-
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

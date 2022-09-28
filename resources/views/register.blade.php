@@ -42,9 +42,9 @@
             <form method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="form-group has-feedback">
-                    <input id="name" type="text" name="name" class="form-control @error('name') is-invalid @enderror"
-                        name="name" value="{{ old('name') }}" required autocomplete="name" autofocus
-                        placeholder="Masukan Nama">
+                    <input id="name" type="text" name="name"
+                        class="form-control @error('name') is-invalid @enderror" name="name"
+                        value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Masukan Nama">
                     @error('name')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -101,8 +101,6 @@
     <script src="{{ asset('template') }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- iCheck -->
     <script src="{{ asset('template') }}/plugins/iCheck/icheck.min.js"></script>
-    <sc{{ asset('template') }} $(function() { $('input').iCheck({ checkboxClass: 'icheckbox_square-blue' ,
-        radioClass: 'iradio_square-blue' , increaseArea: '20%' /* optional */ }); }); </script>
 </body>
 
 </html>
